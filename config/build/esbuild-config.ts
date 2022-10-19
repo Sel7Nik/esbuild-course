@@ -18,6 +18,11 @@ const config: BuildOptions = {
   tsconfig: resolveRoot('tsconfig.json'),
   minify: isProd,
   sourcemap: isDev,
+  loader: {
+    '.png': 'file',
+    '.jpg': 'file',
+    '.svg': 'file'
+  }
 
 }
 export default config
