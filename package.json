@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "esbuild ./src/index.js --bundle --outdir=\"build\" --minify",
-    "start": "cross-env MODE=development node ./config/build/esbuild-dev.js",
-    "prod": "cross-env MODE=production node ./config/build/esbuild-prod.js"
+    "start": "cross-env MODE=development ts-node ./config/build/esbuild-dev.ts",
+    "prod": "cross-env MODE=production ts-node ./config/build/esbuild-prod.ts"
   },
   "keywords": [],
   "author": "",
