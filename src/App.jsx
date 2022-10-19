@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './index.css'
 const App = () => {
   const [state, setState] = useState(0)
   return (
