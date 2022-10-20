@@ -4,7 +4,7 @@ import './index.css'
 import Logo from '../public/img/bike-1.jpg'
 
 const App = () => {
-  const [state, setState] = useState<number>(10)
+  const [state, setState] = useState<number>(1)
   return (
     <div>
       <img src={Logo} alt="jpg" />

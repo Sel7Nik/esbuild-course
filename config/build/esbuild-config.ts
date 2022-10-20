@@ -13,7 +13,8 @@ function resolveRoot(...segments: string[]) {
 const config: BuildOptions = {
   outdir: resolveRoot('build'),
   entryPoints: [resolveRoot('src', 'index.jsx')],
-  entryNames: 'bundle',
+  entryNames: '[dir]/bundle.[name]-[hash]',
+  // entryNames: 'bundle',
   bundle: true,
   tsconfig: resolveRoot('tsconfig.json'),
   minify: isProd,
